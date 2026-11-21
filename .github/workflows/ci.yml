@@ -1,0 +1,13 @@
+name: CI
+on:
+  push:
+    branches: [main]
+jobs:
+  mac:
+    runs-on: macos-14
+    steps:
+      - run: echo mac ok
+  ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo ubuntu ok
